@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form id="js-form">
+        <label for="search-park">Search park</label>
+        <input type="text" name="search-park" id="js-search-term" required>
+
+        <label for="max-results">Maximum results to return</label>
+        <input type="number" name="max-results" id="js-max-results" value="10">
+
+        <input type="submit" value="Go!">
+    </form>
+    <div id="searchResults"></div>
+    <p id="js-error-message" class="error-message"></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
